@@ -1,6 +1,7 @@
 .property-actions {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 5px;
     padding: 5px;
     font-size: .9rem;
@@ -12,6 +13,8 @@
     border-radius: 10px;
     border: 2px solid var(--primary);
     color: #fff;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .btn-whatsapp:hover {
@@ -26,6 +29,9 @@
     border: 2px solid var(--border);
     color:var(--text-button-secondary);
     font-weight: 600;
+    max-width: 300px;
+    min-width: 250px;
+    margin: 0 auto;
 }
 
 .btn-contract:hover {
