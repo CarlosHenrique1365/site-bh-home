@@ -1,0 +1,33 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
+:root {
+        /* Fundos */
+    --bg: #F4F2EE;;
+    --card: #ffffff;
+        /* Bordas */
+    --border: #D8D5CF;
+        /* Textos */
+    --text-primary: #2F2F2F;
+    --text-secondary: #7A7A7A;
+    --text-button-secondary: #41503d;
+        /* Cor principal da marca */
+    --primary: #556B4F;
+    --primary-hover: #465A41;
+        /* Destaques */
+    --accent: #8E9B87;
+        /* Tons auxiliares */
+    --beige: #C9B8A3;
+    --taupe: #A08F7A;
+        /* Sombras */
+    --shadow: rgba(0, 0, 0, 0.18);
+    /* Tom claro */
+    --secondary-hover:#f1ebeb;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-primary);
+}

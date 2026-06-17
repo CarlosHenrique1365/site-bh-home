@@ -1,0 +1,35 @@
+.property-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card);
+    border: .5px solid var(--border);
+    border-radius: 10px;
+    gap: 5px;
+    box-shadow: 0px 8px 20px var(--shadow);
+}
+
+.property-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+}
+
+.property-card h3,
+.property-card p {
+    margin: 0;
+    padding: 5px;
+}
+
+.property-card h3 {
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.property-card p {
+    color: var(--text-secondary);
+    font-size: .8rem;
+    font-weight: 300;
+}

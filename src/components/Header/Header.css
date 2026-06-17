@@ -1,0 +1,27 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  gap: 8px;
+  box-shadow: 0px 8px 20px var(--shadow);
+
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  width: 70%;
+
+  padding: 12px 16px;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  width: 100%;
+}

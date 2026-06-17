@@ -1,0 +1,34 @@
+.property-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    font-size: .9rem;
+    text-align: center;
+}
+.btn-whatsapp {
+    background: var(--primary);
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid var(--primary);
+    color: #fff;
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--primary-hover);
+    transition: .6s all;
+}
+
+.btn-contract {
+    background: transparent;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    color:var(--text-button-secondary);
+    font-weight: 600;
+}
+
+.btn-contract:hover {
+    background-color: var(--secondary-hover);
+    transition: .6s all;
+}
