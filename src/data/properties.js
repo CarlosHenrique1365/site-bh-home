@@ -3,7 +3,7 @@ const properties = [
     id: 1,
     title: "Quarto 1 - Augusto de Lima 249",
     price: 0,
-    distance: "",
+    distance: "A 5 min a pé da Faculdade de Direito da UFMG e do Centro Universitário UNA. Estação Central do metrô a 10 min a pé.",
     category: ["Masculino"],
     metro: false,
     rented: true,
