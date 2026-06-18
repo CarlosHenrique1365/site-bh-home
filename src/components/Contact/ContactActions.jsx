@@ -1,4 +1,5 @@
-import "./ContactActions.css"
+import "./ContactActions.css";
+import { FaWhatsapp } from "react-icons/fa";
 function ContactActions() {
   return (
     <div className="property-actions">
@@ -8,6 +9,7 @@ function ContactActions() {
         rel="noopener noreferrer"
         className="btn-whatsapp"
       >
+        <FaWhatsapp className="whatsapp-icon"/>
         Falar com Consultora no Whatsap
       </a>
 

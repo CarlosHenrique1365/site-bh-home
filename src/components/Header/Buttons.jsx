@@ -1,5 +1,5 @@
 import "./Buttons.css";
-// Importa os ícones que quiser do pacote específico
+// Importa os ícones
 import { FaUniversity, FaSubway, FaMapMarkerAlt, FaSortAmountDown, FaSortAmountUp, FaThLarge } from "react-icons/fa";
 const filters = [
   { label: "Tudo",        icon: <FaThLarge /> },

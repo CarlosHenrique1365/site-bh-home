@@ -33,3 +33,8 @@
     border: 1px solid var(--border);
     font-weight: 600;
 }
+
+.filter-button:focus {
+  border-color: #c9834a;
+  box-shadow: 0 0 0 4px rgba(201,131,74,.15);
+}

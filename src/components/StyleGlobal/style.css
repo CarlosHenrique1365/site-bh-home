@@ -3,6 +3,7 @@
   text-decoration: none;
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 :root {
@@ -16,8 +17,10 @@
   --text-secondary: #7a7a7a;
   --text-button-secondary: #646863;
   /* Cor principal da marca */
-  --primary: #cb824d;
-  --primary-hover: #b87647;
+  --primary: #c9834a;
+  --primary-hover: #b87439;
+  --btn-destaque: #25D366;
+  --border-destaque: #25d366;
   /* Destaques */
   --accent: #8e9b87;
   /* Tons auxiliares */
@@ -32,4 +35,5 @@
 body {
   background-color: var(--bg);
   color: var(--text-primary);
+  overflow-x: hidden;
 }

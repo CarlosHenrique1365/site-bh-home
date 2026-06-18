@@ -7,6 +7,10 @@
     gap: 5px;
     box-shadow: 0px 8px 20px var(--shadow);
 }
+.property-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(0,0,0,.12);
+}
 
 .property-card img {
     width: 100%;
@@ -26,6 +30,12 @@
     color: var(--text-primary);
     font-size: 1rem;
     font-weight: 600;
+}
+
+.property-card h2 {
+    color: #c9834a;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .property-card p {

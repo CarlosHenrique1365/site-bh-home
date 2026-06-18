@@ -2,39 +2,49 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
+    align-items: center;
+    gap: 8px;
     padding: 5px;
     font-size: .9rem;
     text-align: center;
 }
 .btn-whatsapp {
-    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--btn-destaque);
     padding: 8px;
     border-radius: 10px;
-    border: 2px solid var(--primary);
+    border: 2px solid var(--border-destaque);
     color: #fff;
     max-width: 300px;
     margin: 0 auto;
 }
 
+.whatsapp-icon {
+  margin-right: 8px;
+  align-items: center;
+}
+
 .btn-whatsapp:hover {
-    background-color: var(--primary-hover);
-    transition: .6s all;
+  background-color: #20c55a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
 }
 
 .btn-contract {
     background: transparent;
     padding: 8px;
     border-radius: 10px;
-    border: 2px solid var(--border);
-    color:var(--text-button-secondary);
+    border: 2px solid #c9834a;
+    color: #c9834a;
     font-weight: 600;
-    max-width: 300px;
-    min-width: 250px;
+    max-width: 310px;
+    min-width: 280px;
     margin: 0 auto;
 }
 
 .btn-contract:hover {
     background-color: var(--secondary-hover);
-    transition: .6s all;
+    transform: translateY(-2px);
 }
