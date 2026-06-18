@@ -1,35 +1,35 @@
 * {
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-    margin: 0px;
-    padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 :root {
-        /* Fundos */
-    --bg: #F4F2EE;;
-    --card: #ffffff;
-        /* Bordas */
-    --border: #D8D5CF;
-        /* Textos */
-    --text-primary: #2F2F2F;
-    --text-secondary: #7A7A7A;
-    --text-button-secondary: #646863;
-        /* Cor principal da marca */
-    --primary: #CB824D;
-    --primary-hover: #b87647;
-        /* Destaques */
-    --accent: #8E9B87;
-        /* Tons auxiliares */
-    --beige: #C9B8A3;
-    --taupe: #A08F7A;
-        /* Sombras */
-    --shadow: rgba(0, 0, 0, 0.18);
-    /* Tom claro */
-    --secondary-hover:#f1ebeb;
+  /* Fundos */
+  --bg: #f4f2ee;
+  --card: #ffffff;
+  /* Bordas */
+  --border: #d8d5cf;
+  /* Textos */
+  --text-primary: #2f2f2f;
+  --text-secondary: #7a7a7a;
+  --text-button-secondary: #646863;
+  /* Cor principal da marca */
+  --primary: #cb824d;
+  --primary-hover: #b87647;
+  /* Destaques */
+  --accent: #8e9b87;
+  /* Tons auxiliares */
+  --beige: #c9b8a3;
+  --taupe: #a08f7a;
+  /* Sombras */
+  --shadow: rgba(0, 0, 0, 0.18);
+  /* Tom claro */
+  --secondary-hover: #f1ebeb;
 }
 
 body {
-    background-color: var(--bg);
-    color: var(--text-primary);
+  background-color: var(--bg);
+  color: var(--text-primary);
 }
