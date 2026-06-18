@@ -1,8 +1,18 @@
 .header-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #c9b8a3d0;
+}
+
+
+.logo {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
 }
 
 .search-container {
@@ -16,6 +26,7 @@
   border: 1px solid #ddd;
   border-radius: 999px;
   width: 70%;
+  margin: 0 auto;
 
   padding: 12px 16px;
 }

@@ -1,6 +1,8 @@
 * {
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 :root {
@@ -12,10 +14,10 @@
         /* Textos */
     --text-primary: #2F2F2F;
     --text-secondary: #7A7A7A;
-    --text-button-secondary: #41503d;
+    --text-button-secondary: #646863;
         /* Cor principal da marca */
-    --primary: #556B4F;
-    --primary-hover: #465A41;
+    --primary: #CB824D;
+    --primary-hover: #b87647;
         /* Destaques */
     --accent: #8E9B87;
         /* Tons auxiliares */
