@@ -1,45 +1,143 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 32px;
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 48px auto;
+    padding: 0 24px;
+
+    align-items: stretch;
+}
+
+/* =========================
+   CARD PRINCIPAL
+========================= */
 .property-card {
     display: flex;
     flex-direction: column;
+
+    width: 100%;
+    max-width: 420px;
+    min-width: 320px;
+
     background-color: var(--card);
-    border: .5px solid var(--border);
-    border-radius: 10px;
-    gap: 5px;
-    box-shadow: 0px 8px 20px var(--shadow);
-}
-.property-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 30px rgba(0,0,0,.12);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px var(--shadow);
+
+    transition: all .25s ease;
+
+    height: 100%;
+
+    justify-self: center;
 }
 
+/* Hover estilo Airbnb */
+.property-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .18);
+}
+
+/* Zoom suave na imagem */
+.property-card:hover img {
+    transform: scale(1.03);
+}
+
+/* =========================
+   IMAGEM
+========================= */
 .property-card img {
     width: 100%;
-    height: 250px;
+    height: 280px;
     object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
     cursor: pointer;
+
+    transition: transform .4s ease;
 }
 
+/* =========================
+   CONTEÚDO
+========================= */
+.property-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    padding: 18px 18px 20px;
+}
+
+/* Reset de espaçamentos */
 .property-card h3,
+.property-card h2,
 .property-card p {
     margin: 0;
-    padding: 5px;
 }
 
+/* Título */
 .property-card h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
     color: var(--text-primary);
-    font-size: 1rem;
+}
+
+/* Preço */
+.property-card h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #c9834a;
+}
+
+/* Descrição */
+.property-card p {
+    font-size: .9rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.property-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 10px;
+    padding-top: 10px;
+
+    border-top: 1px solid var(--border);
+}
+
+/* =========================
+   BADGES
+========================= */
+.badge-gender,
+.badge-available {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 6px 12px;
+    border-radius: 999px;
+
+    font-size: .78rem;
     font-weight: 600;
 }
 
-.property-card h2 {
-    color: #c9834a;
-  font-size: 1.5rem;
-  font-weight: 700;
+/* Gênero */
+.badge-gender {
+    background: #eef3ff;
+    color: #38383a;
 }
 
-.property-card p {
-    color: var(--text-secondary);
-    font-size: .8rem;
-    font-weight: 300;
+/* Disponível */
+.badge-available {
+    background: #e7f8ec;
+    color: #2b8a3e;
 }
