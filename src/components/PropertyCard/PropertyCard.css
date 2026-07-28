@@ -95,7 +95,7 @@
 
 /* Descrição */
 .property-card p {
-    font-size: .9rem;
+    font-size: .8rem;
     color: var(--text-secondary);
     line-height: 1.4;
 }

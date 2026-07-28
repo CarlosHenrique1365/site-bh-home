@@ -1,35 +1,88 @@
 .carousel {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  width: 100%;
+}
+
+.carousel-main-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .carousel-main {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 12px;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.2s ease;
 }
 
-.carousel-thumbs {
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  color: #222;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
-.carousel-thumbs img {
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-    cursor: pointer;
-    border-radius: 8px;
-    opacity: 0.6;
+.carousel-main-container:hover .carousel-btn {
+  opacity: 1;
 }
 
-.carousel-thumbs img:hover {
-    opacity: 1;
+.carousel-btn:hover {
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-.active-thumb {
-    opacity: 1 !important;
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+  z-index: 2;
+}
+
+.carousel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.carousel-dot.active {
+  background: white;
+  transform: scale(1.2);
+}
+
+.carousel-empty {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f7f7;
+  border-radius: 12px;
+  color: #b0b0b0;
+  font-size: 13px;
 }
