@@ -14,7 +14,6 @@ const ListaN8n = ({ filter, search }) => {
       try {
         setLoading(true);
         setError("");
-
         const response = await fetch(
           "https://n8n-n8n-30edfb-178-253-250-81.sslip.io/webhook/InfoQuartos"
           // "http://localhost:5678/webhook/InfoQuartos"
