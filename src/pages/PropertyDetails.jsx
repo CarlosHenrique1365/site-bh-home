@@ -15,7 +15,7 @@ function PropertyDetails() {
   useEffect(() => {
     const buscar = async () => {
       try {
-        const response = await fetch("http://localhost:5678/webhook/InfoQuartos");
+        const response = await fetch("https://n8n-n8n-30edfb-178-253-250-81.sslip.io/webhook/InfoQuartos");
         const data = await response.json();
         const rooms = Array.isArray(data) ? data : data.data || [];
         const found = rooms.find((room) => room.id === id);
