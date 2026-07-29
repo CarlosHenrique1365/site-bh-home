@@ -15,7 +15,9 @@ function PropertyDetails() {
   useEffect(() => {
     const buscar = async () => {
       try {
-        const response = await fetch("https://n8n-n8n-30edfb-178-253-250-81.sslip.io/webhook/InfoQuartos");
+        const response = await fetch(
+          "https://n8n-n8n-30edfb-178-253-250-81.sslip.io/webhook/InfoQuartos",
+        );
         const data = await response.json();
         const rooms = Array.isArray(data) ? data : data.data || [];
         const found = rooms.find((room) => room.id === id);
@@ -76,7 +78,9 @@ function PropertyDetails() {
               <h2 className="pd-subtitle">{roomPart}</h2>
               {floorPart && <p className="pd-floor">{floorPart}</p>}
               {addressPart && <p className="pd-address">{addressPart}</p>}
-              <span className={`pd-badge-gender ${gender === "Feminino" ? "feminino" : "masculino"}`}>
+              <span
+                className={`pd-badge-gender ${gender === "Feminino" ? "feminino" : "masculino"}`}
+              >
                 {gender === "Feminino" ? <FaFemale /> : <FaMale />}
                 {gender}
               </span>
